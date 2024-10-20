@@ -1,1 +1,50 @@
-  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <div class="container mx-auto p-6 text-gray-700">
+
+    <!-- Weather App Title -->
+    <h1 class="text-4xl font-bold mb-6 text-center text-black">🌤 Weather App</h1>
+
+    <!-- Search Box -->
+    <div class="flex justify-center items-center mb-6">
+      <input type="text" id="city-input" class="input-text px-4 py-2 border rounded-lg w-3/4 md:w-1/2" placeholder="Enter city name">
+      <button id="search-btn" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 ml-4 rounded-lg transition-all">Search</button>
+    </div>
+
+    <!-- Current Weather Section -->
+    <div id="current-weather" class="weather-card w-full md:w-1/2 mx-auto text-center hidden">
+      <h2 id="location-name" class="text-2xl font-semibold text-gray-800 mb-2"></h2>
+      <div id="weather-icon" class="my-4"></div>
+      <p id="temperature" class="text-3xl font-bold mb-2"></p>
+      <p id="humidity" class="text-lg"></p>
+      <p id="wind-speed" class="text-lg"></p>
+    </div>
+
+    <!-- Recently Searched Cities Section -->
+    <div id="recent-cities" class="mt-8 w-full md:w-1/2 mx-auto hidden">
+      <h3 class="text-xl font-semibold text-center text-black mb-4">Recently Searched Cities</h3>
+      <ul id="city-list" class="grid text-black grid-cols-2 sm:grid-cols-4 gap-4 text-center"></ul>
+    </div>
+
+    <!-- 5-Day Forecast Section -->
+    <div id="forecast-container"  class="mt-8 w-full md:w-3/4 mx-auto hidden  ">
+      <h3 class="text-xl font-semibold text-center text-white mb-4">5-Day Forecast</h3>
+      <div id="forecast"  class="grid  grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

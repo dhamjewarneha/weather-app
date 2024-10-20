@@ -1,1 +1,24 @@
-  
+body {
+    background: linear-gradient(to right, #f1b68a, #50aee4);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .weather-card {
+    background: rgba(126, 165, 248, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+  .forecast-card {
+    background: rgba(149, 176, 245, 0.85);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+  }
+  .forecast {
+background-color: #ACB6E5;
+  }
